@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greydarken4"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/pergunta"
+        android:background="@color/bluegreydarken4"
+        android:text="Pergunta?"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/bluegreylighten5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:background="@color/bluegreylighten3"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgRespostas"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnResponder"
+        app:layout_constraintTop_toBottomOf="@+id/pergunta">
+
+        <RadioButton
+            android:id="@+id/rbResposta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/rbResposta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item 2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbResposta3"
+            android:text="Item 3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbResposta4"
+            android:text="Item 4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbResposta5"
+            android:text="Item 5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnResponder"
+        android:layout_width="161dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/reddarken4"
+        android:textColor="@color/white"
+        android:onClick="btnResponderOnClick"
+        android:text="Responder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
